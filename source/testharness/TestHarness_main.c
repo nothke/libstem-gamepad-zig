@@ -1,4 +1,4 @@
-#include "gamepad/Gamepad.h"
+#include "../gamepad/Gamepad.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
