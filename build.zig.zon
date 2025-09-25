@@ -1,0 +1,10 @@
+.{
+    .name = .libstem_gamepad,
+    .version = "1.4.2",
+    .fingerprint = 0x15dc47ea93f781ce,
+    .paths = .{
+        "source",
+        "build.zig",
+        "build.zig.zon",
+    },
+}
