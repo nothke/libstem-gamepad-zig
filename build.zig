@@ -70,7 +70,7 @@ pub fn build(b: *std.Build) void {
         else => {},
     }
 
-    lib.installHeadersDirectory(b.path("source/gamepad"), "build/headers", .{});
+    lib.installHeadersDirectory(b.path("source/gamepad"), "", .{});
 
     const lib_artifact = b.addInstallArtifact(lib, .{});
 
