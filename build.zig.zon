@@ -1,6 +1,7 @@
 .{
     .name = .libstem_gamepad,
     .version = "1.4.2",
+    .minimum_zig_version = "0.15.1",
     .fingerprint = 0x15dc47ea93f781ce,
     .paths = .{
         "source",
