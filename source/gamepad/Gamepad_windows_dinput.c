@@ -22,7 +22,9 @@
 
 // Special thanks to SDL2 for portions of DirectInput and XInput code used in this implementation
 
+#ifndef _WIN32_WINNT
 #define _WIN32_WINNT 0x0501
+#endif
 #define INITGUID
 #define DIRECTINPUT_VERSION 0x0800
 #ifdef _MSC_VER
@@ -34,8 +36,8 @@
 #define __reserved
 #endif
   
-#include "gamepad/Gamepad.h"
-#include "gamepad/Gamepad_private.h"
+#include "Gamepad.h"
+#include "Gamepad_private.h"
 #include <stdio.h>
 #include <stdlib.h>
 
