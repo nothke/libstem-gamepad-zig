@@ -57,7 +57,7 @@ pub fn build(b: *std.Build) void {
         },
         .windows => {
             lib.linkLibC();
-            lib.linkSystemLibrary("xinput9_1_0");
+            lib.linkSystemLibrary("xinput1_4");
             lib.linkSystemLibrary("dinput8");
             lib.linkSystemLibrary("dxguid");
             lib.linkSystemLibrary("WbemUuid");
