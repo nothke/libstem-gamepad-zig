@@ -56,12 +56,10 @@ pub fn build(b: *std.Build) void {
             lib.linkSystemLibrary("pthread");
         },
         .windows => {
-            // You’ll need to adjust these to your actual paths or use env vars
-            lib.addLibraryPath(b.path("C:/MinGW/dx9/lib/x64"));
-            lib.linkSystemLibrary("Xinput");
+            lib.linkLibC();
+            lib.linkSystemLibrary("xinput9_1_0");
             lib.linkSystemLibrary("dinput8");
             lib.linkSystemLibrary("dxguid");
-            lib.addLibraryPath(b.path("C:/MinGW/WinSDK/Lib/x64"));
             lib.linkSystemLibrary("WbemUuid");
             lib.linkSystemLibrary("Ole32");
             lib.linkSystemLibrary("OleAut32");
